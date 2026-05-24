@@ -2,36 +2,78 @@ export default function Home() {
   return (
     <main className="bg-black text-white min-h-screen">
       
-      {/* NAVBAR */}
-      <nav className="flex items-center justify-between px-8 py-6 border-b border-zinc-800">
-        <div className="flex items-center gap-4">
-          <img
-            src="/logo.png"
-            alt="Vegas Auto Group"
-            className="w-14 h-14 object-contain"
-          />
+     {/* NAVBAR */}
+<nav className="sticky top-0 z-50 bg-black/90 backdrop-blur border-b border-zinc-800">
 
-          <div>
-            <h1 className="text-2xl font-bold tracking-wide">
-              VEGAS AUTO GROUP
-            </h1>
+  <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
 
-            <p className="text-sm text-yellow-500 tracking-[0.3em]">
-              PREMIUM DEALERSHIP
-            </p>
-          </div>
-        </div>
+    {/* LEFT SIDE */}
+    <div className="flex items-center gap-4">
 
-        <div className="hidden md:flex gap-8 text-sm uppercase tracking-wider">
-          <a href="#inventory" className="hover:text-yellow-500 transition">
-            Inventory
-          </a>
+      <img
+        src="/logo.png"
+        alt="Vegas Auto Group"
+        className="w-14 h-14 object-contain"
+      />
 
-          <a href="#contact" className="hover:text-yellow-500 transition">
-            Contact
-          </a>
-        </div>
-      </nav>
+      <div>
+        <h1 className="text-xl md:text-2xl font-bold tracking-wide">
+          VEGAS AUTO GROUP
+        </h1>
+
+        <p className="text-[10px] md:text-xs text-yellow-500 tracking-[0.35em] uppercase">
+          Auto Group LLC
+        </p>
+      </div>
+
+    </div>
+
+    {/* CENTER LINKS */}
+    <div className="hidden md:flex items-center gap-10 uppercase tracking-widest text-sm">
+
+      <a
+        href="#inventory"
+        className="hover:text-yellow-500 transition duration-300"
+      >
+        Inventory
+      </a>
+
+      <a
+        href="#contact"
+        className="hover:text-yellow-500 transition duration-300"
+      >
+        Contact
+      </a>
+
+      <a
+        href="#about"
+        className="hover:text-yellow-500 transition duration-300"
+      >
+        About
+      </a>
+
+    </div>
+
+    {/* RIGHT SIDE */}
+    <div className="hidden md:flex items-center gap-4">
+
+      <a
+        href="tel:+15555555555"
+        className="border border-yellow-500 text-yellow-500 px-5 py-2 rounded-xl hover:bg-yellow-500 hover:text-black transition duration-300"
+      >
+        Call Now
+      </a>
+
+    </div>
+
+    {/* MOBILE MENU ICON */}
+    <button className="md:hidden text-3xl">
+      ☰
+    </button>
+
+  </div>
+
+</nav>
 
       {/* HERO */}
       <section className="flex flex-col items-center justify-center text-center px-6 py-28">
